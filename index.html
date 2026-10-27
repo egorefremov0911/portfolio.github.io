@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egor Efremov — Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f111a;
+      color: #e0e6ed;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .bio {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      max-width: 600px;
+    }
+
+    .links-section {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .btn-container {
+      display: inline-flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-linkedin {
+      background-color: #0a66c2;
+      color: #ffffff;
+    }
+
+    .btn-linkedin:hover {
+      background-color: #084e96;
+      transform: translateY(-2px);
+    }
+
+    .btn-artstation {
+      background-color: #13aff0;
+      color: #ffffff;
+    }
+
+    .btn-artstation:hover {
+      background-color: #0d8ec5;
+      transform: translateY(-2px);
+    }
+
+    .btn-itch {
+      background-color: #fa5c5c;
+      color: #ffffff;
+    }
+
+    .btn-itch:hover {
+      background-color: #e04343;
+      transform: translateY(-2px);
+    }
+
+    .gallery-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #1e293b;
+      padding-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .work-card {
+      background-color: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .work-info {
+      padding: 1rem;
+    }
+
+    .work-info h3 {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 0.3rem;
+    }
+
+    .work-info p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1 class="name">Egor Efremov</h1>
+      <p class="bio">
+            Hello! My name is Egor Efremov, and I am a computer science student passionate about programming, 2D art, and game development. I enjoy building projects that combine technical problem-solving with creative visual design. Alongside software development, I create pixel art and frame-by-frame animations in Aseprite, designing characters, environments, and game-ready assets. 
+
+            I am currently seeking software engineering and game development internship opportunities where I can apply my skills, learn from experienced teams, and contribute to exciting projects. Feel free to explore my work below or reach out to connect! 
+      </p>
+    </header>
+
+    <section class="links-section">
+      <div class="btn-container">
+
+        <a href="https://www.linkedin.com/in/egorefremov" target="_blank" class="btn btn-linkedin">
+          LinkedIn Profile
+        </a>
+
+        <a href="https://fallk1.artstation.com/" target="_blank" class="btn btn-artstation">
+          ArtStation Portfolio
+        </a>
+
+        <a href="https://fallk1.itch.io/orba" target="_blank" class="btn btn-itch">
+          Play my Game on itch.io
+        </a>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gallery-title">Featured Works</h2>
+      
+      <div class="gallery-grid">
+
+        <div class="work-card">
+          <img src="https://cdnb.artstation.com/p/assets/images/images/102/166/057/original/fallk1-train-station-animation-redd.gif?1788559000" alt="Pixel Art Artwork 1">
+          <div class="work-info">
+            <h3>Night Train Station</h3>
+            <p>2D Pixel Art Animation</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img src="https://cdna.artstation.com/p/assets/images/images/102/743/884/large/fallk1-ronova-any.webp?1790475607" alt="Pixel Art Artwork 2">
+          <div class="work-info">
+            <h3>Ronova, Ruler of Death</h3>
+            <p>Character Design</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img src="https://cdnb.artstation.com/p/assets/images/images/102/262/633/large/fallk1-cows-utumn.webp?1788900924" alt="Game Project">
+          <div class="work-info">
+            <h3>Autumn</h3>
+            <p>Game Environment</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
